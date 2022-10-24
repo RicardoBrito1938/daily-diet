@@ -7,13 +7,11 @@ const Routes = () => {
   const { Navigator, Screen } = createNativeStackNavigator();
 
   return (
-    <NativeBaseProvider>
-      <NavigationContainer>
-        <Navigator screenOptions={{ headerShown: false }}>
-          <Screen name="Dashboard" component={Dashboard} />
-        </Navigator>
-      </NavigationContainer>
-    </NativeBaseProvider>
+    <NavigationContainer>
+      <Navigator screenOptions={{ headerShown: false }}>
+        <Screen name="Dashboard" component={Dashboard} />
+      </Navigator>
+    </NavigationContainer>
   );
 };
 
